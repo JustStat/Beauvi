@@ -9,7 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         BackendlessConfigurator.configureBackendless()
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        let vc = PlaceListAssembly.viewController()
+        let vc = PlaceListViewController();
         self.window?.rootViewController = vc
         self.window?.makeKeyAndVisible()
         

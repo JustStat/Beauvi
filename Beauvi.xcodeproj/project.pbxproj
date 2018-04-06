@@ -7,37 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		148A54D620381D9E00224EB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A54CD20381D9E00224EB8 /* ViewController.swift */; };
+		1404F6B720771939000C8AFD /* PlaceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404F6B620771939000C8AFD /* PlaceListTableViewCell.swift */; };
+		1404F6B920771C79000C8AFD /* PlaceListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404F6B820771C79000C8AFD /* PlaceListTableView.swift */; };
+		1407D97720770D8100838AE5 /* PlaceListTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1407D97620770D8100838AE5 /* PlaceListTableViewDataSource.swift */; };
+		1407D98120770EEB00838AE5 /* BeauviTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1407D98020770EEB00838AE5 /* BeauviTests.swift */; };
+		1407D989207712BF00838AE5 /* PlaceListTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1407D988207712BF00838AE5 /* PlaceListTableViewDelegate.swift */; };
 		148A54D720381D9E00224EB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148A54CE20381D9E00224EB8 /* LaunchScreen.storyboard */; };
 		148A54D820381D9E00224EB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148A54D020381D9E00224EB8 /* Main.storyboard */; };
 		148A54D920381D9E00224EB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A54D320381D9E00224EB8 /* AppDelegate.swift */; };
 		148A54DC20381E2500224EB8 /* BackendlessConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A54DB20381E2500224EB8 /* BackendlessConfigurator.swift */; };
 		148A54DE20381F4600224EB8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A54DD20381F4600224EB8 /* Constants.swift */; };
-		148A54E02038228300224EB8 /* PlaceListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A54DF2038228300224EB8 /* PlaceListPresenter.swift */; };
-		148A54E2203822EF00224EB8 /* PlaceListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A54E1203822EF00224EB8 /* PlaceListViewOutput.swift */; };
-		148A54E52038269A00224EB8 /* PlaceListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A54E42038269A00224EB8 /* PlaceListAssembly.swift */; };
-		148A54E92038285F00224EB8 /* PlaceListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A54E82038285F00224EB8 /* PlaceListViewInput.swift */; };
 		148A54ED20382AEC00224EB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 148A54EC20382AEC00224EB8 /* Assets.xcassets */; };
-		B5C6D7D986F74F491D4768C2 /* libPods-Beauvi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2DFF3A885EDA16E3948971 /* libPods-Beauvi.a */; };
+		22353FD7FB02A0C75D7B539B /* BVMPlaceListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D41C5F97DA26DBD2AA12E21 /* BVMPlaceListConfigurator.swift */; };
+		2A2964FDEF445FA4405CCBC4 /* BVMPlaceListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E90548CA2E6C1A174627522 /* BVMPlaceListViewInput.swift */; };
+		3CAE77F6938348F01B78599C /* Pods_Beauvi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5492E2904AB4381A7D1DBF /* Pods_Beauvi.framework */; };
+		50616FD8CA8C8C7BDD4BF199 /* BVMPlaceListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC879AFD0DD4919078EDFC4C /* BVMPlaceListModuleInput.swift */; };
+		533F11C039F4E490B4D231CC /* BVMPlaceListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221F419D1E60A23E0D141A33 /* BVMPlaceListInteractorInput.swift */; };
+		592AB593FF7A961D50316A0E /* BVMPlaceListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4D7E0A3DA3D59F7CA0D74B /* BVMPlaceListInteractorOutput.swift */; };
+		64F254E0C66D5A4BC993ACC2 /* BVMPlaceListInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB62840D5FADD3EC18899776 /* BVMPlaceListInitializer.swift */; };
+		895C0508B4BAD003CC488059 /* BVMPlaceListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD03EF574582FB32A244982 /* BVMPlaceListRouterInput.swift */; };
+		ACA3A067F92BC40585EF10AC /* BVMPlaceListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B76C62BCC97551C8E919A /* BVMPlaceListInteractor.swift */; };
+		AEA03DBBEBFB87FEEDCF2E19 /* BVMPlaceListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E395BF76AB67C16CD58C16 /* BVMPlaceListPresenter.swift */; };
+		B209635F8542D703E62A32B0 /* BVMPlaceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B4BC0B21FE175A79F2689 /* BVMPlaceListViewController.swift */; };
+		B8ED22FB4A441D85531BC731 /* BVMPlaceListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09270064ABB33C4AEFDB0CAD /* BVMPlaceListRouter.swift */; };
+		BDC54091A21ADF16DF7A00AB /* BVMPlaceListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8CAC79C7D45DE684B093E /* BVMPlaceListViewOutput.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1407D98320770EEB00838AE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F22E1A31E8407D1004B722A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F22E1AA1E8407D1004B722A;
+			remoteInfo = Beauvi;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		09270064ABB33C4AEFDB0CAD /* BVMPlaceListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListRouter.swift; sourceTree = "<group>"; };
+		0A6B4BC0B21FE175A79F2689 /* BVMPlaceListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListViewController.swift; sourceTree = "<group>"; };
 		0F22E1AB1E8407D1004B722A /* Beauvi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beauvi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		148A54CD20381D9E00224EB8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1404F6B620771939000C8AFD /* PlaceListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListTableViewCell.swift; sourceTree = "<group>"; };
+		1404F6B820771C79000C8AFD /* PlaceListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListTableView.swift; sourceTree = "<group>"; };
+		1407D97620770D8100838AE5 /* PlaceListTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListTableViewDataSource.swift; sourceTree = "<group>"; };
+		1407D97820770E9200838AE5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1407D97E20770EEB00838AE5 /* BeauviTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeauviTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1407D98020770EEB00838AE5 /* BeauviTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeauviTests.swift; sourceTree = "<group>"; };
+		1407D98220770EEB00838AE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1407D988207712BF00838AE5 /* PlaceListTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListTableViewDelegate.swift; sourceTree = "<group>"; };
 		148A54CF20381D9E00224EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		148A54D120381D9E00224EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		148A54D320381D9E00224EB8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		148A54DB20381E2500224EB8 /* BackendlessConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendlessConfigurator.swift; sourceTree = "<group>"; };
 		148A54DD20381F4600224EB8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		148A54DF2038228300224EB8 /* PlaceListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListPresenter.swift; sourceTree = "<group>"; };
-		148A54E1203822EF00224EB8 /* PlaceListViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListViewOutput.swift; sourceTree = "<group>"; };
-		148A54E42038269A00224EB8 /* PlaceListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListAssembly.swift; sourceTree = "<group>"; };
-		148A54E82038285F00224EB8 /* PlaceListViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListViewInput.swift; sourceTree = "<group>"; };
 		148A54EA20382AB400224EB8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		148A54EC20382AEC00224EB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BD03EF574582FB32A244982 /* BVMPlaceListRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListRouterInput.swift; sourceTree = "<group>"; };
+		221F419D1E60A23E0D141A33 /* BVMPlaceListInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListInteractorInput.swift; sourceTree = "<group>"; };
+		2CB8CAC79C7D45DE684B093E /* BVMPlaceListViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListViewOutput.swift; sourceTree = "<group>"; };
+		5E90548CA2E6C1A174627522 /* BVMPlaceListViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListViewInput.swift; sourceTree = "<group>"; };
+		79E395BF76AB67C16CD58C16 /* BVMPlaceListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListPresenter.swift; sourceTree = "<group>"; };
 		7A9D897DF902CB8F889BB67A /* Pods-Beauvi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauvi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beauvi/Pods-Beauvi.release.xcconfig"; sourceTree = "<group>"; };
+		8A4D7E0A3DA3D59F7CA0D74B /* BVMPlaceListInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListInteractorOutput.swift; sourceTree = "<group>"; };
+		8D41C5F97DA26DBD2AA12E21 /* BVMPlaceListConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListConfigurator.swift; sourceTree = "<group>"; };
 		8E5B512FFD15A813B2D53B8C /* Pods-Beauvi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauvi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beauvi/Pods-Beauvi.debug.xcconfig"; sourceTree = "<group>"; };
-		FB2DFF3A885EDA16E3948971 /* libPods-Beauvi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Beauvi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D6B76C62BCC97551C8E919A /* BVMPlaceListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListInteractor.swift; sourceTree = "<group>"; };
+		BC5492E2904AB4381A7D1DBF /* Pods_Beauvi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beauvi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB62840D5FADD3EC18899776 /* BVMPlaceListInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListInitializer.swift; sourceTree = "<group>"; };
+		FC879AFD0DD4919078EDFC4C /* BVMPlaceListModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListModuleInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +82,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5C6D7D986F74F491D4768C2 /* libPods-Beauvi.a in Frameworks */,
+				3CAE77F6938348F01B78599C /* Pods_Beauvi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1407D97B20770EEB00838AE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				148A54C420381D9E00224EB8 /* Beauvi */,
+				1407D97F20770EEB00838AE5 /* BeauviTests */,
 				0F22E1AC1E8407D1004B722A /* Products */,
 				F28FB31C5E43FE0D9BB7EA1C /* Pods */,
 				29790D8F6166FDC632134DD1 /* Frameworks */,
@@ -66,8 +111,35 @@
 			isa = PBXGroup;
 			children = (
 				0F22E1AB1E8407D1004B722A /* Beauvi.app */,
+				1407D97E20770EEB00838AE5 /* BeauviTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1404F6B52077190C000C8AFD /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1404F6B620771939000C8AFD /* PlaceListTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		1407D97520770D5000838AE5 /* TableSource */ = {
+			isa = PBXGroup;
+			children = (
+				1407D97620770D8100838AE5 /* PlaceListTableViewDataSource.swift */,
+				1407D988207712BF00838AE5 /* PlaceListTableViewDelegate.swift */,
+			);
+			path = TableSource;
+			sourceTree = "<group>";
+		};
+		1407D97F20770EEB00838AE5 /* BeauviTests */ = {
+			isa = PBXGroup;
+			children = (
+				1407D98020770EEB00838AE5 /* BeauviTests.swift */,
+				1407D98220770EEB00838AE5 /* Info.plist */,
+			);
+			path = BeauviTests;
 			sourceTree = "<group>";
 		};
 		148A54C420381D9E00224EB8 /* Beauvi */ = {
@@ -92,9 +164,9 @@
 			isa = PBXGroup;
 			children = (
 				148A54C820381D9E00224EB8 /* Configurators */,
-				148A54C920381D9E00224EB8 /* PlacesList */,
 				148A54CE20381D9E00224EB8 /* LaunchScreen.storyboard */,
 				148A54D020381D9E00224EB8 /* Main.storyboard */,
+				26881A2B8FB8D564FD9CD426 /* UserStories */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -107,42 +179,6 @@
 			path = Configurators;
 			sourceTree = "<group>";
 		};
-		148A54C920381D9E00224EB8 /* PlacesList */ = {
-			isa = PBXGroup;
-			children = (
-				148A54E32038266800224EB8 /* Assembly */,
-				148A54CA20381D9E00224EB8 /* Presenter */,
-				148A54CB20381D9E00224EB8 /* Model */,
-				148A54CC20381D9E00224EB8 /* View */,
-			);
-			path = PlacesList;
-			sourceTree = "<group>";
-		};
-		148A54CA20381D9E00224EB8 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				148A54DF2038228300224EB8 /* PlaceListPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		148A54CB20381D9E00224EB8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		148A54CC20381D9E00224EB8 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				148A54CD20381D9E00224EB8 /* ViewController.swift */,
-				148A54E1203822EF00224EB8 /* PlaceListViewOutput.swift */,
-				148A54E82038285F00224EB8 /* PlaceListViewInput.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		148A54D220381D9E00224EB8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,20 +189,71 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		148A54E32038266800224EB8 /* Assembly */ = {
+		26881A2B8FB8D564FD9CD426 /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
-				148A54E42038269A00224EB8 /* PlaceListAssembly.swift */,
+				F55CC431A37A80421FDCE4C7 /* PlaceList */,
 			);
-			path = Assembly;
+			path = UserStories;
 			sourceTree = "<group>";
 		};
 		29790D8F6166FDC632134DD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FB2DFF3A885EDA16E3948971 /* libPods-Beauvi.a */,
+				1407D97820770E9200838AE5 /* XCTest.framework */,
+				BC5492E2904AB4381A7D1DBF /* Pods_Beauvi.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61C44B6AF06EF93ED50B982B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				221F419D1E60A23E0D141A33 /* BVMPlaceListInteractorInput.swift */,
+				8A4D7E0A3DA3D59F7CA0D74B /* BVMPlaceListInteractorOutput.swift */,
+				9D6B76C62BCC97551C8E919A /* BVMPlaceListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		71479B4188CEC4ECA09090D9 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				8D41C5F97DA26DBD2AA12E21 /* BVMPlaceListConfigurator.swift */,
+				CB62840D5FADD3EC18899776 /* BVMPlaceListInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		78CC14DC994FD5A4B4D65C97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1404F6B52077190C000C8AFD /* TableViewCells */,
+				1407D97520770D5000838AE5 /* TableSource */,
+				5E90548CA2E6C1A174627522 /* BVMPlaceListViewInput.swift */,
+				2CB8CAC79C7D45DE684B093E /* BVMPlaceListViewOutput.swift */,
+				0A6B4BC0B21FE175A79F2689 /* BVMPlaceListViewController.swift */,
+				1404F6B820771C79000C8AFD /* PlaceListTableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A52230DB9E4A6C84F646FF51 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1BD03EF574582FB32A244982 /* BVMPlaceListRouterInput.swift */,
+				09270064ABB33C4AEFDB0CAD /* BVMPlaceListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C90FB0722FF61282F3B7C7B7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FC879AFD0DD4919078EDFC4C /* BVMPlaceListModuleInput.swift */,
+				79E395BF76AB67C16CD58C16 /* BVMPlaceListPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		F28FB31C5E43FE0D9BB7EA1C /* Pods */ = {
@@ -176,6 +263,18 @@
 				7A9D897DF902CB8F889BB67A /* Pods-Beauvi.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F55CC431A37A80421FDCE4C7 /* PlaceList */ = {
+			isa = PBXGroup;
+			children = (
+				78CC14DC994FD5A4B4D65C97 /* View */,
+				C90FB0722FF61282F3B7C7B7 /* Presenter */,
+				61C44B6AF06EF93ED50B982B /* Interactor */,
+				A52230DB9E4A6C84F646FF51 /* Router */,
+				71479B4188CEC4ECA09090D9 /* Configurator */,
+			);
+			path = PlaceList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,19 +300,44 @@
 			productReference = 0F22E1AB1E8407D1004B722A /* Beauvi.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1407D97D20770EEB00838AE5 /* BeauviTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1407D98520770EEB00838AE5 /* Build configuration list for PBXNativeTarget "BeauviTests" */;
+			buildPhases = (
+				1407D97A20770EEB00838AE5 /* Sources */,
+				1407D97B20770EEB00838AE5 /* Frameworks */,
+				1407D97C20770EEB00838AE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1407D98420770EEB00838AE5 /* PBXTargetDependency */,
+			);
+			name = BeauviTests;
+			productName = BeauviTests;
+			productReference = 1407D97E20770EEB00838AE5 /* BeauviTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0F22E1A31E8407D1004B722A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0920;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 				TargetAttributes = {
 					0F22E1AA1E8407D1004B722A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZB2PMQN3C6;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
+					};
+					1407D97D20770EEB00838AE5 = {
+						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = ZB2PMQN3C6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0F22E1AA1E8407D1004B722A;
 					};
 				};
 			};
@@ -231,6 +355,7 @@
 			projectRoot = "";
 			targets = (
 				0F22E1AA1E8407D1004B722A /* Beauvi */,
+				1407D97D20770EEB00838AE5 /* BeauviTests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +368,13 @@
 				148A54D820381D9E00224EB8 /* Main.storyboard in Resources */,
 				148A54ED20382AEC00224EB8 /* Assets.xcassets in Resources */,
 				148A54D720381D9E00224EB8 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1407D97C20770EEB00838AE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,9 +420,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Beauvi/Pods-Beauvi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -305,17 +440,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				148A54D920381D9E00224EB8 /* AppDelegate.swift in Sources */,
+				1404F6B720771939000C8AFD /* PlaceListTableViewCell.swift in Sources */,
 				148A54DC20381E2500224EB8 /* BackendlessConfigurator.swift in Sources */,
-				148A54D620381D9E00224EB8 /* ViewController.swift in Sources */,
-				148A54E2203822EF00224EB8 /* PlaceListViewOutput.swift in Sources */,
-				148A54E02038228300224EB8 /* PlaceListPresenter.swift in Sources */,
 				148A54DE20381F4600224EB8 /* Constants.swift in Sources */,
-				148A54E52038269A00224EB8 /* PlaceListAssembly.swift in Sources */,
-				148A54E92038285F00224EB8 /* PlaceListViewInput.swift in Sources */,
+				2A2964FDEF445FA4405CCBC4 /* BVMPlaceListViewInput.swift in Sources */,
+				BDC54091A21ADF16DF7A00AB /* BVMPlaceListViewOutput.swift in Sources */,
+				B209635F8542D703E62A32B0 /* BVMPlaceListViewController.swift in Sources */,
+				50616FD8CA8C8C7BDD4BF199 /* BVMPlaceListModuleInput.swift in Sources */,
+				AEA03DBBEBFB87FEEDCF2E19 /* BVMPlaceListPresenter.swift in Sources */,
+				1404F6B920771C79000C8AFD /* PlaceListTableView.swift in Sources */,
+				533F11C039F4E490B4D231CC /* BVMPlaceListInteractorInput.swift in Sources */,
+				592AB593FF7A961D50316A0E /* BVMPlaceListInteractorOutput.swift in Sources */,
+				1407D989207712BF00838AE5 /* PlaceListTableViewDelegate.swift in Sources */,
+				ACA3A067F92BC40585EF10AC /* BVMPlaceListInteractor.swift in Sources */,
+				895C0508B4BAD003CC488059 /* BVMPlaceListRouterInput.swift in Sources */,
+				B8ED22FB4A441D85531BC731 /* BVMPlaceListRouter.swift in Sources */,
+				22353FD7FB02A0C75D7B539B /* BVMPlaceListConfigurator.swift in Sources */,
+				64F254E0C66D5A4BC993ACC2 /* BVMPlaceListInitializer.swift in Sources */,
+				1407D97720770D8100838AE5 /* PlaceListTableViewDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1407D97A20770EEB00838AE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1407D98120770EEB00838AE5 /* BeauviTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1407D98420770EEB00838AE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F22E1AA1E8407D1004B722A /* Beauvi */;
+			targetProxy = 1407D98320770EEB00838AE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		148A54CE20381D9E00224EB8 /* LaunchScreen.storyboard */ = {
@@ -350,6 +512,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -357,6 +520,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -405,6 +569,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -412,6 +577,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -445,7 +611,9 @@
 			baseConfigurationReference = 8E5B512FFD15A813B2D53B8C /* Pods-Beauvi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZB2PMQN3C6;
 				INFOPLIST_FILE = Beauvi/Helpers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.Beauvi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -460,13 +628,65 @@
 			baseConfigurationReference = 7A9D897DF902CB8F889BB67A /* Pods-Beauvi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZB2PMQN3C6;
 				INFOPLIST_FILE = Beauvi/Helpers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.Beauvi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pods/Backendless/SDK/ios/backendless/include/Backendless-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		1407D98620770EEB00838AE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZB2PMQN3C6;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = BeauviTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kirillvarlamov.me.BeauviTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beauvi.app/Beauvi";
+			};
+			name = Debug;
+		};
+		1407D98720770EEB00838AE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZB2PMQN3C6;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = BeauviTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kirillvarlamov.me.BeauviTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beauvi.app/Beauvi";
 			};
 			name = Release;
 		};
@@ -487,6 +707,15 @@
 			buildConfigurations = (
 				0F22E1BE1E8407D1004B722A /* Debug */,
 				0F22E1BF1E8407D1004B722A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1407D98520770EEB00838AE5 /* Build configuration list for PBXNativeTarget "BeauviTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1407D98620770EEB00838AE5 /* Debug */,
+				1407D98720770EEB00838AE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

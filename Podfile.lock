@@ -1,12 +1,15 @@
 PODS:
   - Backendless (4.0.20)
+  - PureLayout (3.0.2)
 
 DEPENDENCIES:
   - Backendless (~> 4.0)
+  - PureLayout
 
 SPEC CHECKSUMS:
   Backendless: 7fd838f57e0ff59d211b068d9648c1404e633bc7
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
 
-PODFILE CHECKSUM: 87d164ce415c7bf1d5234174b3d90b567ec5ac96
+PODFILE CHECKSUM: 9f9fb843e3ec5fe4b23e45fad70a3aee0b8e374b
 
 COCOAPODS: 1.4.0
