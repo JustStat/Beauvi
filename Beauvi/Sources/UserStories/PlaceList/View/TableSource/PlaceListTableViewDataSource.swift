@@ -8,13 +8,20 @@
 import UIKit
 
 class PlaceListTableViewDataSource: NSObject, UITableViewDataSource {
+    
+    var places : [Place]!
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        guard places != nil else {
+            return 0
+        }
+        return places.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: PlaceListTableViewCell.reuseIdentifier!, for: indexPath)
+        (cell as! PlaceListTableViewCell).setForPlace(place: places[indexPath.row])
         return cell
     }
+    
 }

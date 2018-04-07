@@ -12,6 +12,9 @@ class PlaceListTableView: UITableView {
     init() {
         super.init(frame:CGRect.zero, style: UITableViewStyle.plain)
         register(PlaceListTableViewCell.classForCoder(), forCellReuseIdentifier: PlaceListTableViewCell.reuseIdentifier!)
+        self.separatorStyle = .none
+        self.contentInset = UIEdgeInsetsMake(0, 0, 10, 0)
+        self.showsVerticalScrollIndicator = false
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

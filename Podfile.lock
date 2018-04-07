@@ -1,15 +1,20 @@
 PODS:
-  - Backendless (4.0.20)
+  - Backendless (4.5.0)
   - PureLayout (3.0.2)
+  - SDWebImage (4.3.3):
+    - SDWebImage/Core (= 4.3.3)
+  - SDWebImage/Core (4.3.3)
 
 DEPENDENCIES:
   - Backendless (~> 4.0)
   - PureLayout
+  - SDWebImage
 
 SPEC CHECKSUMS:
-  Backendless: 7fd838f57e0ff59d211b068d9648c1404e633bc7
+  Backendless: ff8d4bcc2ea7ac244f308c592634511dff38df87
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
 
-PODFILE CHECKSUM: 9f9fb843e3ec5fe4b23e45fad70a3aee0b8e374b
+PODFILE CHECKSUM: 42343b8fb60de2feb5d59a795b136e30a8a43ca8
 
 COCOAPODS: 1.4.0

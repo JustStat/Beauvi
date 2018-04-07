@@ -7,6 +7,7 @@ target 'Beauvi' do
   # Pods for Beauvi
 pod 'Backendless', '~> 4.0'
 pod 'PureLayout'
+pod 'SDWebImage'
 
 end
         

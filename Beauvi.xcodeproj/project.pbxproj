@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1404F6B720771939000C8AFD /* PlaceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404F6B620771939000C8AFD /* PlaceListTableViewCell.swift */; };
 		1404F6B920771C79000C8AFD /* PlaceListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404F6B820771C79000C8AFD /* PlaceListTableView.swift */; };
+		1404F6BF2077586E000C8AFD /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404F6BE2077586E000C8AFD /* Place.swift */; };
+		1404F6C42078BE75000C8AFD /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404F6C32078BE75000C8AFD /* Photo.swift */; };
+		1404F6C62078E0DB000C8AFD /* BeauviColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404F6C52078E0DB000C8AFD /* BeauviColors.swift */; };
 		1407D97720770D8100838AE5 /* PlaceListTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1407D97620770D8100838AE5 /* PlaceListTableViewDataSource.swift */; };
 		1407D98120770EEB00838AE5 /* BeauviTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1407D98020770EEB00838AE5 /* BeauviTests.swift */; };
 		1407D989207712BF00838AE5 /* PlaceListTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1407D988207712BF00838AE5 /* PlaceListTableViewDelegate.swift */; };
@@ -49,6 +52,9 @@
 		0F22E1AB1E8407D1004B722A /* Beauvi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beauvi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1404F6B620771939000C8AFD /* PlaceListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListTableViewCell.swift; sourceTree = "<group>"; };
 		1404F6B820771C79000C8AFD /* PlaceListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListTableView.swift; sourceTree = "<group>"; };
+		1404F6BE2077586E000C8AFD /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		1404F6C32078BE75000C8AFD /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		1404F6C52078E0DB000C8AFD /* BeauviColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeauviColors.swift; sourceTree = "<group>"; };
 		1407D97620770D8100838AE5 /* PlaceListTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListTableViewDataSource.swift; sourceTree = "<group>"; };
 		1407D97820770E9200838AE5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1407D97E20770EEB00838AE5 /* BeauviTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeauviTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +130,15 @@
 			path = TableViewCells;
 			sourceTree = "<group>";
 		};
+		1404F6BD2077584E000C8AFD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1404F6BE2077586E000C8AFD /* Place.swift */,
+				1404F6C32078BE75000C8AFD /* Photo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1407D97520770D5000838AE5 /* TableSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +182,7 @@
 				148A54CE20381D9E00224EB8 /* LaunchScreen.storyboard */,
 				148A54D020381D9E00224EB8 /* Main.storyboard */,
 				26881A2B8FB8D564FD9CD426 /* UserStories */,
+				1404F6BD2077584E000C8AFD /* Models */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -185,6 +201,7 @@
 				148A54EA20382AB400224EB8 /* Info.plist */,
 				148A54D320381D9E00224EB8 /* AppDelegate.swift */,
 				148A54DD20381F4600224EB8 /* Constants.swift */,
+				1404F6C52078E0DB000C8AFD /* BeauviColors.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -422,10 +439,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Beauvi/Pods-Beauvi-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -439,6 +458,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1404F6C42078BE75000C8AFD /* Photo.swift in Sources */,
 				148A54D920381D9E00224EB8 /* AppDelegate.swift in Sources */,
 				1404F6B720771939000C8AFD /* PlaceListTableViewCell.swift in Sources */,
 				148A54DC20381E2500224EB8 /* BackendlessConfigurator.swift in Sources */,
@@ -455,9 +475,11 @@
 				ACA3A067F92BC40585EF10AC /* BVMPlaceListInteractor.swift in Sources */,
 				895C0508B4BAD003CC488059 /* BVMPlaceListRouterInput.swift in Sources */,
 				B8ED22FB4A441D85531BC731 /* BVMPlaceListRouter.swift in Sources */,
+				1404F6C62078E0DB000C8AFD /* BeauviColors.swift in Sources */,
 				22353FD7FB02A0C75D7B539B /* BVMPlaceListConfigurator.swift in Sources */,
 				64F254E0C66D5A4BC993ACC2 /* BVMPlaceListInitializer.swift in Sources */,
 				1407D97720770D8100838AE5 /* PlaceListTableViewDataSource.swift in Sources */,
+				1404F6BF2077586E000C8AFD /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
