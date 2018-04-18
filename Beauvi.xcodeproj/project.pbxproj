@@ -12,6 +12,7 @@
 		1404F6BF2077586E000C8AFD /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404F6BE2077586E000C8AFD /* Place.swift */; };
 		1404F6C42078BE75000C8AFD /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404F6C32078BE75000C8AFD /* Photo.swift */; };
 		1404F6C62078E0DB000C8AFD /* BeauviColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404F6C52078E0DB000C8AFD /* BeauviColors.swift */; };
+		1404F6C9207B6092000C8AFD /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404F6C8207B6092000C8AFD /* FilterButton.swift */; };
 		1407D97720770D8100838AE5 /* PlaceListTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1407D97620770D8100838AE5 /* PlaceListTableViewDataSource.swift */; };
 		1407D98120770EEB00838AE5 /* BeauviTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1407D98020770EEB00838AE5 /* BeauviTests.swift */; };
 		1407D989207712BF00838AE5 /* PlaceListTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1407D988207712BF00838AE5 /* PlaceListTableViewDelegate.swift */; };
@@ -55,6 +56,7 @@
 		1404F6BE2077586E000C8AFD /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		1404F6C32078BE75000C8AFD /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		1404F6C52078E0DB000C8AFD /* BeauviColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeauviColors.swift; sourceTree = "<group>"; };
+		1404F6C8207B6092000C8AFD /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		1407D97620770D8100838AE5 /* PlaceListTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListTableViewDataSource.swift; sourceTree = "<group>"; };
 		1407D97820770E9200838AE5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1407D97E20770EEB00838AE5 /* BeauviTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeauviTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +139,14 @@
 				1404F6C32078BE75000C8AFD /* Photo.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1404F6C7207B607B000C8AFD /* FilterView */ = {
+			isa = PBXGroup;
+			children = (
+				1404F6C8207B6092000C8AFD /* FilterButton.swift */,
+			);
+			path = FilterView;
 			sourceTree = "<group>";
 		};
 		1407D97520770D5000838AE5 /* TableSource */ = {
@@ -245,6 +255,7 @@
 		78CC14DC994FD5A4B4D65C97 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1404F6C7207B607B000C8AFD /* FilterView */,
 				1404F6B52077190C000C8AFD /* TableViewCells */,
 				1407D97520770D5000838AE5 /* TableSource */,
 				5E90548CA2E6C1A174627522 /* BVMPlaceListViewInput.swift */,
@@ -476,6 +487,7 @@
 				895C0508B4BAD003CC488059 /* BVMPlaceListRouterInput.swift in Sources */,
 				B8ED22FB4A441D85531BC731 /* BVMPlaceListRouter.swift in Sources */,
 				1404F6C62078E0DB000C8AFD /* BeauviColors.swift in Sources */,
+				1404F6C9207B6092000C8AFD /* FilterButton.swift in Sources */,
 				22353FD7FB02A0C75D7B539B /* BVMPlaceListConfigurator.swift in Sources */,
 				64F254E0C66D5A4BC993ACC2 /* BVMPlaceListInitializer.swift in Sources */,
 				1407D97720770D8100838AE5 /* PlaceListTableViewDataSource.swift in Sources */,
