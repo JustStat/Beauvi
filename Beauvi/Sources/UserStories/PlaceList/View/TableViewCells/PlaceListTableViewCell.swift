@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SDWebImage
+import moa
 
 class PlaceListTableViewCell: UITableViewCell {
     
@@ -120,7 +120,7 @@ class PlaceListTableViewCell: UITableViewCell {
     }
     
     func setForPlace(place: Place) {
-        placeImageView.sd_setImage(with: URL(string: (place.mainPhotoUrl?.url)!), completed: nil)
+        placeImageView.moa.url = place.mainPhotoUrl?.url
         placeNameLabel.text = place.title!
     }
 

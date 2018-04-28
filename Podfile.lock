@@ -1,20 +1,22 @@
 PODS:
+  - Auk (8.0.2):
+    - moa
   - Backendless (4.5.0)
+  - moa (9.0.2)
   - PureLayout (3.0.2)
-  - SDWebImage (4.3.3):
-    - SDWebImage/Core (= 4.3.3)
-  - SDWebImage/Core (4.3.3)
 
 DEPENDENCIES:
+  - Auk
   - Backendless (~> 4.0)
+  - moa
   - PureLayout
-  - SDWebImage
 
 SPEC CHECKSUMS:
+  Auk: 82be62a2cf650437fe745c81b12ac2440a0f682c
   Backendless: ff8d4bcc2ea7ac244f308c592634511dff38df87
+  moa: b73dc5e0efa1fad00711c4608e41b197f4d15b12
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
-  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
 
-PODFILE CHECKSUM: 42343b8fb60de2feb5d59a795b136e30a8a43ca8
+PODFILE CHECKSUM: e4aea7bd20364534c897a08f1212ecaf69d45ece
 
 COCOAPODS: 1.4.0

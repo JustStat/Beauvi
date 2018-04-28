@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		022055F9778387871341240E /* PlaceDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C5E36214E7FA6FDEA2A248 /* PlaceDetailRouter.swift */; };
+		0796BE38ECA96F0093D49D04 /* PlaceDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA3D675F85DFA788A60C08D /* PlaceDetailInteractor.swift */; };
 		1404F6B720771939000C8AFD /* PlaceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404F6B620771939000C8AFD /* PlaceListTableViewCell.swift */; };
 		1404F6B920771C79000C8AFD /* PlaceListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404F6B820771C79000C8AFD /* PlaceListTableView.swift */; };
 		1404F6BF2077586E000C8AFD /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404F6BE2077586E000C8AFD /* Place.swift */; };
@@ -22,19 +24,34 @@
 		148A54DC20381E2500224EB8 /* BackendlessConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A54DB20381E2500224EB8 /* BackendlessConfigurator.swift */; };
 		148A54DE20381F4600224EB8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A54DD20381F4600224EB8 /* Constants.swift */; };
 		148A54ED20382AEC00224EB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 148A54EC20382AEC00224EB8 /* Assets.xcassets */; };
+		14AA8A3C208979AB005C518E /* PlaceDetailConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E704324CB87D70DEF689C /* PlaceDetailConfiguratorTests.swift */; };
+		14AA8A3D208979B6005C518E /* PlaceDetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A0A15D7536B304567DE3B7 /* PlaceDetailViewTests.swift */; };
+		14AA8A3E208979BD005C518E /* PlaceDetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2FCA61BCF9ECC129AB68C /* PlaceDetailInteractorTests.swift */; };
+		14AA8A3F208979C4005C518E /* PlaceDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561C3F07CCC8D443371715D4 /* PlaceDetailPresenterTests.swift */; };
+		14AA8A40208979CB005C518E /* PlaceDetailRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12690E8EE7449CCE72345B46 /* PlaceDetailRouterTests.swift */; };
 		22353FD7FB02A0C75D7B539B /* BVMPlaceListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D41C5F97DA26DBD2AA12E21 /* BVMPlaceListConfigurator.swift */; };
+		26C7480CDD6F113ED61927BB /* PlaceDetailModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12874F92784626EB8AB0DB8F /* PlaceDetailModuleInput.swift */; };
 		2A2964FDEF445FA4405CCBC4 /* BVMPlaceListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E90548CA2E6C1A174627522 /* BVMPlaceListViewInput.swift */; };
+		2D626A0CA91196EEEC85C52A /* PlaceDetailInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFF1DF2CA7CC12C18F3A99C /* PlaceDetailInitializer.swift */; };
 		3CAE77F6938348F01B78599C /* Pods_Beauvi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5492E2904AB4381A7D1DBF /* Pods_Beauvi.framework */; };
 		50616FD8CA8C8C7BDD4BF199 /* BVMPlaceListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC879AFD0DD4919078EDFC4C /* BVMPlaceListModuleInput.swift */; };
 		533F11C039F4E490B4D231CC /* BVMPlaceListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221F419D1E60A23E0D141A33 /* BVMPlaceListInteractorInput.swift */; };
 		592AB593FF7A961D50316A0E /* BVMPlaceListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4D7E0A3DA3D59F7CA0D74B /* BVMPlaceListInteractorOutput.swift */; };
+		5A6807FBF6BF607E29FBB905 /* PlaceDetailInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9925E83A8B2F777FEC9ACD78 /* PlaceDetailInteractorInput.swift */; };
+		62012FFDA79DE8CD8395A5FE /* PlaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029EE69670CE2D5C20A7120 /* PlaceDetailViewController.swift */; };
 		64F254E0C66D5A4BC993ACC2 /* BVMPlaceListInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB62840D5FADD3EC18899776 /* BVMPlaceListInitializer.swift */; };
+		681FCC694032121FF42DA23C /* PlaceDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE72D74D5FA8487B11A1C93 /* PlaceDetailPresenter.swift */; };
+		72EB3FAC758E9E1C87864528 /* PlaceDetailViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9107CEDF2AAA420D27F1A440 /* PlaceDetailViewOutput.swift */; };
+		765D0A26C714D02C89260F17 /* PlaceDetailInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD4561F2F718D82D372F049 /* PlaceDetailInteractorOutput.swift */; };
 		895C0508B4BAD003CC488059 /* BVMPlaceListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD03EF574582FB32A244982 /* BVMPlaceListRouterInput.swift */; };
 		ACA3A067F92BC40585EF10AC /* BVMPlaceListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B76C62BCC97551C8E919A /* BVMPlaceListInteractor.swift */; };
 		AEA03DBBEBFB87FEEDCF2E19 /* BVMPlaceListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E395BF76AB67C16CD58C16 /* BVMPlaceListPresenter.swift */; };
 		B209635F8542D703E62A32B0 /* BVMPlaceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B4BC0B21FE175A79F2689 /* BVMPlaceListViewController.swift */; };
+		B26E31137AED351EA94F6B86 /* PlaceDetailRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9431B83C161D8FF060596832 /* PlaceDetailRouterInput.swift */; };
+		B55424EC9F02EE51C9C283BB /* PlaceDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA887BA567BFC6EE706232BD /* PlaceDetailConfigurator.swift */; };
 		B8ED22FB4A441D85531BC731 /* BVMPlaceListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09270064ABB33C4AEFDB0CAD /* BVMPlaceListRouter.swift */; };
 		BDC54091A21ADF16DF7A00AB /* BVMPlaceListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB8CAC79C7D45DE684B093E /* BVMPlaceListViewOutput.swift */; };
+		DD0D98B7FFF2F067262B3FB2 /* PlaceDetailViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894C45DA1CA518E605F55DE /* PlaceDetailViewInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +65,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0029EE69670CE2D5C20A7120 /* PlaceDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewController.swift; sourceTree = "<group>"; };
 		09270064ABB33C4AEFDB0CAD /* BVMPlaceListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListRouter.swift; sourceTree = "<group>"; };
 		0A6B4BC0B21FE175A79F2689 /* BVMPlaceListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListViewController.swift; sourceTree = "<group>"; };
 		0F22E1AB1E8407D1004B722A /* Beauvi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beauvi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12690E8EE7449CCE72345B46 /* PlaceDetailRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceDetailRouterTests.swift; sourceTree = "<group>"; };
+		12874F92784626EB8AB0DB8F /* PlaceDetailModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceDetailModuleInput.swift; sourceTree = "<group>"; };
 		1404F6B620771939000C8AFD /* PlaceListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListTableViewCell.swift; sourceTree = "<group>"; };
 		1404F6B820771C79000C8AFD /* PlaceListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListTableView.swift; sourceTree = "<group>"; };
 		1404F6BE2077586E000C8AFD /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
@@ -70,18 +90,32 @@
 		148A54DD20381F4600224EB8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		148A54EA20382AB400224EB8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		148A54EC20382AEC00224EB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15A0A15D7536B304567DE3B7 /* PlaceDetailViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewTests.swift; sourceTree = "<group>"; };
 		1BD03EF574582FB32A244982 /* BVMPlaceListRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListRouterInput.swift; sourceTree = "<group>"; };
 		221F419D1E60A23E0D141A33 /* BVMPlaceListInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListInteractorInput.swift; sourceTree = "<group>"; };
 		2CB8CAC79C7D45DE684B093E /* BVMPlaceListViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListViewOutput.swift; sourceTree = "<group>"; };
+		33C5E36214E7FA6FDEA2A248 /* PlaceDetailRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceDetailRouter.swift; sourceTree = "<group>"; };
+		3E1E704324CB87D70DEF689C /* PlaceDetailConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceDetailConfiguratorTests.swift; sourceTree = "<group>"; };
+		4CE72D74D5FA8487B11A1C93 /* PlaceDetailPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceDetailPresenter.swift; sourceTree = "<group>"; };
+		561C3F07CCC8D443371715D4 /* PlaceDetailPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceDetailPresenterTests.swift; sourceTree = "<group>"; };
 		5E90548CA2E6C1A174627522 /* BVMPlaceListViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListViewInput.swift; sourceTree = "<group>"; };
+		71C2FCA61BCF9ECC129AB68C /* PlaceDetailInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceDetailInteractorTests.swift; sourceTree = "<group>"; };
 		79E395BF76AB67C16CD58C16 /* BVMPlaceListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListPresenter.swift; sourceTree = "<group>"; };
 		7A9D897DF902CB8F889BB67A /* Pods-Beauvi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauvi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beauvi/Pods-Beauvi.release.xcconfig"; sourceTree = "<group>"; };
 		8A4D7E0A3DA3D59F7CA0D74B /* BVMPlaceListInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListInteractorOutput.swift; sourceTree = "<group>"; };
 		8D41C5F97DA26DBD2AA12E21 /* BVMPlaceListConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListConfigurator.swift; sourceTree = "<group>"; };
 		8E5B512FFD15A813B2D53B8C /* Pods-Beauvi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauvi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beauvi/Pods-Beauvi.debug.xcconfig"; sourceTree = "<group>"; };
+		9107CEDF2AAA420D27F1A440 /* PlaceDetailViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewOutput.swift; sourceTree = "<group>"; };
+		9431B83C161D8FF060596832 /* PlaceDetailRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceDetailRouterInput.swift; sourceTree = "<group>"; };
+		9925E83A8B2F777FEC9ACD78 /* PlaceDetailInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceDetailInteractorInput.swift; sourceTree = "<group>"; };
 		9D6B76C62BCC97551C8E919A /* BVMPlaceListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListInteractor.swift; sourceTree = "<group>"; };
 		BC5492E2904AB4381A7D1DBF /* Pods_Beauvi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beauvi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA3D675F85DFA788A60C08D /* PlaceDetailInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceDetailInteractor.swift; sourceTree = "<group>"; };
 		CB62840D5FADD3EC18899776 /* BVMPlaceListInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListInitializer.swift; sourceTree = "<group>"; };
+		CCFF1DF2CA7CC12C18F3A99C /* PlaceDetailInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceDetailInitializer.swift; sourceTree = "<group>"; };
+		DA887BA567BFC6EE706232BD /* PlaceDetailConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceDetailConfigurator.swift; sourceTree = "<group>"; };
+		E894C45DA1CA518E605F55DE /* PlaceDetailViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewInput.swift; sourceTree = "<group>"; };
+		EDD4561F2F718D82D372F049 /* PlaceDetailInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaceDetailInteractorOutput.swift; sourceTree = "<group>"; };
 		FC879AFD0DD4919078EDFC4C /* BVMPlaceListModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BVMPlaceListModuleInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +197,7 @@
 			children = (
 				1407D98020770EEB00838AE5 /* BeauviTests.swift */,
 				1407D98220770EEB00838AE5 /* Info.plist */,
+				EA00DDB5E1813249B943A818 /* PlaceDetail */,
 			);
 			path = BeauviTests;
 			sourceTree = "<group>";
@@ -216,10 +251,20 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		171AEEB369E0574F81E74B98 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9431B83C161D8FF060596832 /* PlaceDetailRouterInput.swift */,
+				33C5E36214E7FA6FDEA2A248 /* PlaceDetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		26881A2B8FB8D564FD9CD426 /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
 				F55CC431A37A80421FDCE4C7 /* PlaceList */,
+				CDDC5010F3C31DED1906AD36 /* PlaceDetail */,
 			);
 			path = UserStories;
 			sourceTree = "<group>";
@@ -231,6 +276,24 @@
 				BC5492E2904AB4381A7D1DBF /* Pods_Beauvi.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34ECD1A89DF0E04CE3D567A2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				12690E8EE7449CCE72345B46 /* PlaceDetailRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		604F9DC64D762F6B03C63DC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E894C45DA1CA518E605F55DE /* PlaceDetailViewInput.swift */,
+				9107CEDF2AAA420D27F1A440 /* PlaceDetailViewOutput.swift */,
+				0029EE69670CE2D5C20A7120 /* PlaceDetailViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		61C44B6AF06EF93ED50B982B /* Interactor */ = {
@@ -250,6 +313,14 @@
 				CB62840D5FADD3EC18899776 /* BVMPlaceListInitializer.swift */,
 			);
 			path = Configurator;
+			sourceTree = "<group>";
+		};
+		76FEE8D102707113FAE145C9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				71C2FCA61BCF9ECC129AB68C /* PlaceDetailInteractorTests.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		78CC14DC994FD5A4B4D65C97 /* View */ = {
@@ -275,6 +346,33 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		AA41350780D7AF843033B343 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				561C3F07CCC8D443371715D4 /* PlaceDetailPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C2EE781886ACD885A0AF1410 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				DA887BA567BFC6EE706232BD /* PlaceDetailConfigurator.swift */,
+				CCFF1DF2CA7CC12C18F3A99C /* PlaceDetailInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		C700E27AECD015DD4FA7BD3D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9925E83A8B2F777FEC9ACD78 /* PlaceDetailInteractorInput.swift */,
+				EDD4561F2F718D82D372F049 /* PlaceDetailInteractorOutput.swift */,
+				BFA3D675F85DFA788A60C08D /* PlaceDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		C90FB0722FF61282F3B7C7B7 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +382,39 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		CDDC5010F3C31DED1906AD36 /* PlaceDetail */ = {
+			isa = PBXGroup;
+			children = (
+				604F9DC64D762F6B03C63DC2 /* View */,
+				E9816716A59D86D826B3C2D4 /* Presenter */,
+				C700E27AECD015DD4FA7BD3D /* Interactor */,
+				171AEEB369E0574F81E74B98 /* Router */,
+				C2EE781886ACD885A0AF1410 /* Configurator */,
+			);
+			path = PlaceDetail;
+			sourceTree = "<group>";
+		};
+		E9816716A59D86D826B3C2D4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				12874F92784626EB8AB0DB8F /* PlaceDetailModuleInput.swift */,
+				4CE72D74D5FA8487B11A1C93 /* PlaceDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EA00DDB5E1813249B943A818 /* PlaceDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F4FF9FBF180E6F22F7C5506F /* Configurator */,
+				F5219C4FD88B811CC3704319 /* View */,
+				76FEE8D102707113FAE145C9 /* Interactor */,
+				AA41350780D7AF843033B343 /* Presenter */,
+				34ECD1A89DF0E04CE3D567A2 /* Router */,
+			);
+			path = PlaceDetail;
+			sourceTree = "<group>";
+		};
 		F28FB31C5E43FE0D9BB7EA1C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +422,22 @@
 				7A9D897DF902CB8F889BB67A /* Pods-Beauvi.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4FF9FBF180E6F22F7C5506F /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				3E1E704324CB87D70DEF689C /* PlaceDetailConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		F5219C4FD88B811CC3704319 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15A0A15D7536B304567DE3B7 /* PlaceDetailViewTests.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F55CC431A37A80421FDCE4C7 /* PlaceList */ = {
@@ -449,13 +596,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Beauvi/Pods-Beauvi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Auk/Auk.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/moa/moa.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Auk.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/moa.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -492,6 +641,18 @@
 				64F254E0C66D5A4BC993ACC2 /* BVMPlaceListInitializer.swift in Sources */,
 				1407D97720770D8100838AE5 /* PlaceListTableViewDataSource.swift in Sources */,
 				1404F6BF2077586E000C8AFD /* Place.swift in Sources */,
+				DD0D98B7FFF2F067262B3FB2 /* PlaceDetailViewInput.swift in Sources */,
+				72EB3FAC758E9E1C87864528 /* PlaceDetailViewOutput.swift in Sources */,
+				62012FFDA79DE8CD8395A5FE /* PlaceDetailViewController.swift in Sources */,
+				26C7480CDD6F113ED61927BB /* PlaceDetailModuleInput.swift in Sources */,
+				681FCC694032121FF42DA23C /* PlaceDetailPresenter.swift in Sources */,
+				5A6807FBF6BF607E29FBB905 /* PlaceDetailInteractorInput.swift in Sources */,
+				765D0A26C714D02C89260F17 /* PlaceDetailInteractorOutput.swift in Sources */,
+				0796BE38ECA96F0093D49D04 /* PlaceDetailInteractor.swift in Sources */,
+				B26E31137AED351EA94F6B86 /* PlaceDetailRouterInput.swift in Sources */,
+				022055F9778387871341240E /* PlaceDetailRouter.swift in Sources */,
+				B55424EC9F02EE51C9C283BB /* PlaceDetailConfigurator.swift in Sources */,
+				2D626A0CA91196EEEC85C52A /* PlaceDetailInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +661,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1407D98120770EEB00838AE5 /* BeauviTests.swift in Sources */,
+				14AA8A3C208979AB005C518E /* PlaceDetailConfiguratorTests.swift in Sources */,
+				14AA8A3E208979BD005C518E /* PlaceDetailInteractorTests.swift in Sources */,
+				14AA8A3F208979C4005C518E /* PlaceDetailPresenterTests.swift in Sources */,
+				14AA8A3D208979B6005C518E /* PlaceDetailViewTests.swift in Sources */,
+				14AA8A40208979CB005C518E /* PlaceDetailRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

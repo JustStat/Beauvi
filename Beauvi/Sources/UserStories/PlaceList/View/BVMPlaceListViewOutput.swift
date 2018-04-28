@@ -14,4 +14,5 @@ protocol PlaceListViewOutput {
     */
 
     func viewIsReady()
+    func didSelectItemWithPlace(place: Place)
 }

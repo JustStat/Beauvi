@@ -9,8 +9,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         BackendlessConfigurator.configureBackendless()
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        let vc = PlaceListViewController();
-        self.window?.rootViewController = vc
+        let tabBarController = UITabBarController()
+        tabBarController.tabBar.backgroundColor = .white
+        tabBarController.tabBar.tintColor = .beauviRed
+//        tabBarController.hidesBottomBarWhenPushed = true
+        let vc = PlaceListViewController()
+        vc.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "tabBarSearchIcon"), tag: 1)
+        
+        tabBarController.addChildViewController(vc)
+        
+        let navigationController = UINavigationController(rootViewController: tabBarController)
+        navigationController.tabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        // Sets shadow (line below the bar) to a blank image
+        UINavigationBar.appearance().shadowImage = UIImage()
+        // Sets the translucent background color
+        UINavigationBar.appearance().backgroundColor = .clear
+        UINavigationBar.appearance().tintColor = .white
+        
+        self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
         
         return true

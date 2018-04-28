@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol PlaceListTableViewUIDelegate {
+    func didSelectItemAtIndex(indexPath: IndexPath)
+}
+
 class PlaceListTableView: UITableView {
+    
+    var viewDelegate : PlaceListTableViewUIDelegate?
     
     init() {
         super.init(frame:CGRect.zero, style: UITableViewStyle.plain)

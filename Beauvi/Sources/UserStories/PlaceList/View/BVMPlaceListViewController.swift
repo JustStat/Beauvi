@@ -9,11 +9,11 @@
 import UIKit
 import PureLayout
 
-class PlaceListViewController: UIViewController, PlaceListViewInput, UISearchBarDelegate {
+class PlaceListViewController: UIViewController, PlaceListViewInput, UISearchBarDelegate, PlaceListTableViewUIDelegate {
 
     var output: PlaceListViewOutput!
     
-    var tableView : UITableView!
+    var tableView : PlaceListTableView!
     var filterBar: UIStackView!
     var searchBarView: UIView!
     
@@ -34,7 +34,7 @@ class PlaceListViewController: UIViewController, PlaceListViewInput, UISearchBar
     func addSearchBar() {
         searchBarView = UIView()
         self.view.addSubview(searchBarView)
-        searchBarView.backgroundColor = UIColor(red:0.27, green:0.27, blue:0.27, alpha:1.0)
+        searchBarView.backgroundColor = .beauviGrey
         searchBarView.autoPinEdge(toSuperviewEdge: .top)
         searchBarView.autoPinEdge(toSuperviewEdge: .left)
         searchBarView.autoPinEdge(toSuperviewEdge: .right)
@@ -98,6 +98,7 @@ class PlaceListViewController: UIViewController, PlaceListViewInput, UISearchBar
         tableView.autoPinEdge(.top, to: .bottom, of: filterBar)
         tableView.dataSource = tableViewDataSource
         tableView.delegate = tableViewDelegate
+        tableView.viewDelegate = self
     }
     
     
@@ -116,4 +117,9 @@ class PlaceListViewController: UIViewController, PlaceListViewInput, UISearchBar
         tableView.reloadData()
     }
     
+    // MARK: PlaceListTableViewUIDelegate
+    func didSelectItemAtIndex(indexPath: IndexPath) {
+        let place = (tableView.dataSource as! PlaceListTableViewDataSource).places[indexPath.row]
+        output.didSelectItemWithPlace(place: place)
+    }
 }

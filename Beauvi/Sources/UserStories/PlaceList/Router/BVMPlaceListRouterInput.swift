@@ -9,5 +9,5 @@
 import Foundation
 
 protocol PlaceListRouterInput {
-
+    func showDetailWithPlace(from: PlaceListViewInput, place: Place)
 }
