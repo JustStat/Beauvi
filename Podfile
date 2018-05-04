@@ -9,6 +9,8 @@ pod 'Backendless', '~> 4.0'
 pod 'PureLayout'
 pod 'moa'
 pod 'Auk'
+pod 'GoogleMaps'
+pod 'GooglePlaces'
 
 end
         

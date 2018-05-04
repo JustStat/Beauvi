@@ -20,6 +20,7 @@ class PlaceListTableViewDataSource: NSObject, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: PlaceListTableViewCell.reuseIdentifier!, for: indexPath)
+        cell.selectionStyle = .none
         (cell as! PlaceListTableViewCell).setForPlace(place: places[indexPath.row])
         return cell
     }

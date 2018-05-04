@@ -2,21 +2,41 @@ PODS:
   - Auk (8.0.2):
     - moa
   - Backendless (4.5.0)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.7.0):
+    - GoogleMaps/Base (= 2.7.0)
   - moa (9.0.2)
   - PureLayout (3.0.2)
 
 DEPENDENCIES:
   - Auk
   - Backendless (~> 4.0)
+  - GoogleMaps
+  - GooglePlaces
   - moa
   - PureLayout
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Auk
+    - Backendless
+    - GoogleMaps
+    - GooglePlaces
+    - moa
+    - PureLayout
 
 SPEC CHECKSUMS:
   Auk: 82be62a2cf650437fe745c81b12ac2440a0f682c
   Backendless: ff8d4bcc2ea7ac244f308c592634511dff38df87
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
   moa: b73dc5e0efa1fad00711c4608e41b197f4d15b12
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
 
-PODFILE CHECKSUM: e4aea7bd20364534c897a08f1212ecaf69d45ece
+PODFILE CHECKSUM: e71f94a4863905b9c6f5619184eb60303f90825f
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0
