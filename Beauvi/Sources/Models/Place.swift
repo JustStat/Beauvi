@@ -14,7 +14,7 @@ class Place: NSObject {
     var mainPhotoUrl : Photo?
     var gallery : [Photo]?
     var objectId : String?
-//    var ownerId : Int = 0
+    var placeType : String?
     var created: NSDate?
     var updated: NSDate?
 }

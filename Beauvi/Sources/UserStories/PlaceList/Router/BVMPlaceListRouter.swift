@@ -11,8 +11,8 @@ import UIKit
 class PlaceListRouter: PlaceListRouterInput {
     func showDetailWithPlace(from: PlaceListViewInput, place: Place) {
         let controller = from as! UIViewController
-        let detailController = PlaceDetailViewController()
-        detailController.place = place
+        let detailController = UIStoryboard(name: "DetailView", bundle: nil).instantiateViewController(withIdentifier: "DetailView")
+        (detailController as! PlaceDetailViewController).place = place
         controller.navigationController?.pushViewController(detailController, animated: true)
     }
 }

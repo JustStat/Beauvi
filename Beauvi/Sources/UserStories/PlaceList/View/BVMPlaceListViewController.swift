@@ -16,9 +16,11 @@ class PlaceListViewController: UIViewController, PlaceListViewInput, UISearchBar
     var tableView : PlaceListTableView!
     var filterBar: UIStackView!
     var searchBarView: UIView!
+    var searchBar : UISearchBar!
     
     let tableViewDataSource = PlaceListTableViewDataSource()
     let tableViewDelegate = PlaceListTableViewDelegate()
+    let filterNames = ["Памятники", "Парки", "Архитектура", "Обзорные площадки", "Природа", "Другое"]
     
     
 
@@ -27,6 +29,7 @@ class PlaceListViewController: UIViewController, PlaceListViewInput, UISearchBar
         super.viewDidLoad()
         PlaceListModuleConfigurator().configureModuleForViewInput(viewInput: self);
         output.viewIsReady()
+        self.hideKeyboardWhenTappedAround()
     }
     
     // MARK: Setup UI
@@ -48,7 +51,7 @@ class PlaceListViewController: UIViewController, PlaceListViewInput, UISearchBar
         logoView.autoPinEdge(toSuperviewEdge: .left)
         logoView.autoSetDimension(.height, toSize: 37)
         
-        let searchBar = UISearchBar()
+        searchBar = UISearchBar()
         searchBar.delegate = self
         searchBarView.addSubview(searchBar)
         searchBar.autoPinEdge(toSuperviewEdge: .right)
@@ -73,19 +76,21 @@ class PlaceListViewController: UIViewController, PlaceListViewInput, UISearchBar
         filterBar.autoMatch(.height, to: .width, of: view, withMultiplier: 0.27)
         
         for i in 1...6 {
-            let button: UIButton = addFilterButton(filterIcon: UIImage(named: "filter0\(i)"), filterLabel: "Test", filterType: "Test", action: Selector(("filterButtonTap")))
+            let button: UIButton = addFilterButton(filterIcon: UIImage(named: "filter0\(i)"), filterLabel: filterNames[i-1], filterType: "Test", action: Selector(("filterButtonTap:")))
+            button.tag = i
+            button.addTarget(self, action: #selector(filterButtonTap(button:)), for: UIControlEvents.touchUpInside)
             filterBar.addArrangedSubview(button)
         }
     }
     
     func addFilterButton(filterIcon: UIImage!, filterLabel: String, filterType: String,  action: Selector) -> UIButton {
         let button = FilterButton(image: filterIcon, label: filterLabel, filter: filterType, action: action)
-        
         return button
     }
     
-    func filterButtonTap() {
-        
+    @objc func filterButtonTap(button: UIButton) {
+        let filter = Filter(type: FilterType(rawValue: button.tag)!, search: searchBar.text!)
+        output.loadPlacesesWithFilter(filter: filter)
     }
     
     func addTableView() {
@@ -121,5 +126,12 @@ class PlaceListViewController: UIViewController, PlaceListViewInput, UISearchBar
     func didSelectItemAtIndex(indexPath: IndexPath) {
         let place = (tableView.dataSource as! PlaceListTableViewDataSource).places[indexPath.row]
         output.didSelectItemWithPlace(place: place)
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        let str = searchBar.text!
+        let filter = Filter(type: FilterType(rawValue: 0)!, search: searchBar.text!)
+        output.loadPlacesesWithFilter(filter: filter)
     }
 }

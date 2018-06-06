@@ -15,4 +15,5 @@ protocol PlaceListViewOutput {
 
     func viewIsReady()
     func didSelectItemWithPlace(place: Place)
+    func loadPlacesesWithFilter(filter: Filter)
 }

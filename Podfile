@@ -11,6 +11,6 @@ pod 'moa'
 pod 'Auk'
 pod 'GoogleMaps'
 pod 'GooglePlaces'
+pod 'SDWebImage'
 
 end
-        

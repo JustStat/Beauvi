@@ -27,6 +27,7 @@ class FilterButton: UIButton {
         filterLabel.autoPinEdge(toSuperviewEdge: .right)
         filterLabel.autoPinEdge(.top, to: .bottom, of: filterImageView, withOffset: 8)
         filterLabel.text = label
+        filterLabel.font = UIFont.systemFont(ofSize: 7)
         filterLabel.textAlignment = .center
         addTarget(self.superview, action: action, for: .touchUpInside)
     }

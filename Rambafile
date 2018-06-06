@@ -18,7 +18,7 @@ project_group_path: Beauvi/Sources/UserStories
 
 ### Tests generation settings section
 # The tests target name
-test_target: Beauvi
+test_target: BeauviTests
 
 # The file path for new tests
 test_file_path: BeauviTests

@@ -9,5 +9,5 @@
 import Foundation
 
 protocol PlaceListInteractorInput {
-    func loadPlaces();
+    func loadPlaces(filter: Filter?);
 }

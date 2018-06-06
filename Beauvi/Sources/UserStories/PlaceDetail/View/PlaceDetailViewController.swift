@@ -8,14 +8,21 @@
 
 import UIKit
 import Auk
+import GoogleMaps
 
 class PlaceDetailViewController: UIViewController, PlaceDetailViewInput {
 
     var output: PlaceDetailViewOutput!
-    let galleryCarousel = UIScrollView()
     var place : Place!
     
-
+    @IBOutlet weak var galleryCarousel: UIScrollView!
+    @IBOutlet weak var mainInfoView: UIView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var mapView: GMSMapView!
+    
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,29 +34,39 @@ class PlaceDetailViewController: UIViewController, PlaceDetailViewInput {
     // MARK: PlaceDetailViewInput
     func setupInitialState() {
         self.automaticallyAdjustsScrollViewInsets = false
-        self.view.backgroundColor = .white
-        self.view.addSubview(galleryCarousel)
-        
         self.navigationController?.isNavigationBarHidden = false
         self.navigationController?.view.backgroundColor = .clear
-        galleryCarousel.autoPinEdge(toSuperviewEdge: .right)
-        galleryCarousel.autoPinEdge(toSuperviewEdge: .left)
-        galleryCarousel.autoPinEdge(toSuperviewEdge: .top, withInset: 0)
-        galleryCarousel.autoSetDimension(.height, toSize: 230)
-        galleryCarousel.auk.settings.contentMode = .center
+        
+        galleryCarousel.auk.settings.contentMode = .scaleAspectFit
         galleryCarousel.alwaysBounceVertical = false
+        mainInfoView.backgroundColor = colorByType(type: place.placeType!)
         if place.gallery != nil {
             for photo : Photo in place.gallery! {
                 galleryCarousel.auk.show(url: photo.url!)
             }
         }
         
-        let mainInfoView = UIView()
-        self.view.addSubview(mainInfoView)
-        mainInfoView.autoPinEdge(.top, to: .bottom, of: galleryCarousel)
-        mainInfoView.autoPinEdge(toSuperviewEdge: .left, withInset: 28)
-        mainInfoView.autoPinEdge(toSuperviewEdge: .right, withInset: 28)
-        mainInfoView.autoSetDimension(.height, toSize: 50)
-        mainInfoView.backgroundColor = .beauviRed
+        titleLabel.text = place.title
+        descriptionTextView.text = place.detail
+        
+        
+    }
+    
+    func colorByType(type:String) -> UIColor {
+        switch type  {
+        case "1":
+            return UIColor.beauviPurple
+        case "2":
+            return UIColor.beauviDarkGreen
+        case "3":
+            return.beauviRed
+        case "4":
+            return.beauviBlue
+        case "5":
+            return.beauviGreen
+        
+        default:
+            return .beauviRed
+        }
     }
 }

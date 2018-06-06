@@ -13,12 +13,16 @@ class PlaceListPresenter: PlaceListModuleInput, PlaceListViewOutput, PlaceListIn
     var router: PlaceListRouterInput!
 
     func viewIsReady() {
-        interactor.loadPlaces()
+        interactor.loadPlaces(filter: nil)
         view.setupInitialState()
     }
     
     func didSelectItemWithPlace(place: Place) {
         router.showDetailWithPlace(from: view, place: place)
+    }
+    
+    func loadPlacesesWithFilter(filter: Filter) {
+        interactor.loadPlaces(filter: filter)
     }
     
     func interactorDidLoadPlaces(places: [Place]) {

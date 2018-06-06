@@ -7,6 +7,7 @@
 
 import UIKit
 import moa
+import SDWebImage
 
 class PlaceListTableViewCell: UITableViewCell {
     
@@ -14,10 +15,7 @@ class PlaceListTableViewCell: UITableViewCell {
     var placeNameLabel : UILabel!
     var locationLabel : UILabel!
     var distanceLabel : UILabel!
-    
-    
-    
-    
+    var infoView : UIView!
     
     class var reuseIdentifier: String? {
         return "PlaceListCell"
@@ -63,10 +61,9 @@ class PlaceListTableViewCell: UITableViewCell {
         placeImageView.layer.cornerRadius = 10
         placeImageView.clipsToBounds = true
         
-        let infoView = UIView()
+        infoView = UIView()
         cellView.addSubview(infoView)
         
-        infoView.backgroundColor = .beauviRed
         infoView.autoPinEdge(toSuperviewEdge: .left)
         infoView.autoPinEdge(toSuperviewEdge: .right)
         infoView.autoSetDimension(.height, toSize: 43)
@@ -113,15 +110,39 @@ class PlaceListTableViewCell: UITableViewCell {
         locationLabel.autoPinEdge(.right, to: .left, of: distanceLabel, withOffset: 20)
         locationLabel.font = UIFont(name: "ArialMT", size: 9)
         
-        
-        
-        
-        
+    }
+    
+    func colorByType(type:String) -> UIColor {
+        switch type  {
+        case "1":
+            return UIColor.beauviPurple
+        case "2":
+            return UIColor.beauviDarkGreen
+        case "3":
+            return .beauviRed
+        case "4":
+            return .beauviBlue
+        case "5":
+            return .beauviGreen
+            
+        default:
+            return .beauviRed
+        }
+    }
+    
+    override func prepareForReuse() {
+        placeImageView.image = nil
+        placeNameLabel.text = ""
+        locationLabel.text = ""
+        distanceLabel.text = ""
     }
     
     func setForPlace(place: Place) {
-        placeImageView.moa.url = place.mainPhotoUrl?.url
+        placeImageView.sd_setImage(with: URL(string: (place.mainPhotoUrl?.url)!), placeholderImage: UIImage(named: "placeholder"), options: .retryFailed, completed: nil)
         placeNameLabel.text = place.title!
+        infoView.backgroundColor = colorByType(type: place.placeType!)
+        locationLabel.text = "Мыс Токаревского"
+        distanceLabel.text = "2,73 КМ"
     }
 
 }

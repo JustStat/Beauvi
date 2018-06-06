@@ -13,12 +13,7 @@ class BackendlessConfigurator {
     }
     
     private class func addMappingForPlace() {
-//        Backendless.sharedInstance().data.mapTable(toClass: "Place", type: Place.ofClass())
-//        Backendless.sharedInstance().data.mapColumn(toProperty: Place.ofClass(), columnName: "title", propertyName: "name")
-//        Backendless.sharedInstance().data.mapColumn(toProperty: Place.ofClass(), columnName: "detail", propertyName: "detail")
         Backendless.sharedInstance().data.mapColumn(toProperty: Place.ofClass(), columnName: "main_photo", propertyName: "mainPhotoUrl")
-//        Backendless.sharedInstance().data.mapColumn(toProperty: Place.ofClass(), columnName: "gallery", propertyName: "gallery")
-//        Backendless.sharedInstance().data.mapColumn(toProperty: Place.ofClass(), columnName: "objectId", propertyName: "placeId")
-//        Backendless.sharedInstance().data.mapColumn(toProperty: Place.ofClass(), columnName: "ownerId", propertyName: "ownerId")
+        Backendless.sharedInstance().data.mapColumn(toProperty: Place.ofClass(), columnName: "place_type", propertyName: "placeType")
     }
 }
